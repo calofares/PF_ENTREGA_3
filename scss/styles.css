@@ -1,0 +1,532 @@
+@charset "UTF-8";
+/* MIXINS con opciones de display y alineaciones */
+/* MAP con tamaños de letras para los titulos*/
+/*Títulos para usarlos como EXTENDS */
+.title_2, html main .index_titulo h2, html main .prod_titulos h2, html main .tituloNos h2, html main .tituloCont h2, html main .tituloZonas h2 {
+  color: gold;
+  font-style: italic;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+}
+
+.title_3, html main .index_titulo h3, html main .prod_titulos h3, html main .tituloNos h3, html main .tituloCont h3, html main .tituloZonas h3 {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+html .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  padding: 0px 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  letter-spacing: 0.15rem;
+  z-index: 2;
+}
+
+html .header .header_titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+html .header .nav_font_size {
+  font-size: 1.25rem;
+}
+
+html main {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#232b2b));
+  background-image: linear-gradient(to bottom, black, #232b2b);
+}
+
+html main .index_titulo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+html main .index_res {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  padding: 5vh 5vw;
+}
+
+html main .index_res .index_res_1 {
+  padding: 1vh 5vw;
+}
+
+html main .index_res .index_res_2 {
+  padding: 1vh 5vw;
+}
+
+html main .index_res a {
+  display: -ms-grid;
+  display: grid;
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+  font-family: 'Spline Sans', sans-serif;
+}
+
+html main .index_res a strong {
+  font-family: 'Libre Baskerville', serif;
+}
+
+html main .index_res a:hover {
+  color: gold;
+  opacity: 0.75;
+}
+
+html main .prod_titulos {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5vh;
+  text-align: center;
+}
+
+html main .prod__margin {
+  margin: 2vw;
+}
+
+html main .prod__margin .card_font_title {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+html main .prod__margin .card_font_description {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Slabo 27px', serif;
+}
+
+html main .tituloNos {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+html main .presentaciones .presentaciones__espacios {
+  margin: 2vh 0vw;
+}
+
+html main .presentaciones .presentaciones__espacios h3 {
+  display: -ms-grid;
+  display: grid;
+  font-size: 2rem;
+  margin: 2vh 0vw;
+  color: white;
+}
+
+html main .presentaciones .presentaciones__espacios h3 em {
+  color: gold;
+  font-size: 1.5rem;
+}
+
+html main .tituloCont {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+html main .fill {
+  min-height: 100%;
+  height: 100%;
+}
+
+html main .tituloZonas {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+html main .reparto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding-top: 2rem;
+}
+
+html main .reparto .rep__cond {
+  padding-top: 1rem;
+}
+
+html main .reparto .rep__cond h4 {
+  font-size: 1.5rem;
+  font-family: 'Encode Sans', sans-serif;
+}
+
+html main .reparto .rep__cond ul {
+  list-style-type: none;
+}
+
+html main .reparto .rep__cond ul li:before {
+  content: "✓ ";
+}
+
+html main .reparto .rep__cond ul li {
+  font-family: 'Heebo', sans-serif;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+html main .reparto .mapa {
+  padding-bottom: 4vh;
+}
+
+html main .reparto .mapa h4 {
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 1.5rem;
+  padding: 3vh 0;
+}
+
+html main .reparto .mapa iframe {
+  height: 300px;
+  width: 500px;
+}
+
+html main .reparto .mapa .map {
+  border: solid gold 2px;
+  border-radius: 20px;
+}
+
+html main .reparto .zonas__cont {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+html main .reparto .zonas__cont .zonas__productos {
+  padding: 5vh 1.5vw;
+}
+
+html main .reparto .zonas__cont .zonas__contacto {
+  padding: 5vh 1.5vw;
+}
+
+html main .reparto .zonas__cont a {
+  display: -ms-grid;
+  display: grid;
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+  font-family: 'Spline Sans', sans-serif;
+}
+
+html main .reparto .zonas__cont a strong {
+  font-family: 'Libre Baskerville', serif;
+}
+
+html main .reparto .zonas__cont a:hover {
+  color: gold;
+  opacity: 0.75;
+}
+
+html .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #232b2b;
+  padding: 20px 0px;
+  color: white;
+}
+
+html .footer .footer__p {
+  margin: 0;
+  text-align: center;
+}
+
+html .footer div a {
+  text-decoration: none;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+  html {
+    font-size: 0.8rem;
+  }
+  html main .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: black;
+    padding: 10px 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    letter-spacing: 0.15rem;
+    z-index: 2;
+  }
+  html main .index_res {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+    padding: 3vh 0vw;
+  }
+  html main .reparto {
+    display: -ms-grid;
+    display: grid;
+  }
+  html main .reparto .zonas__cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  html main .reparto .zonas__cont .zonas__productos {
+    padding: 1vh 0;
+  }
+  html main .reparto .zonas__cont .zonas__contacto {
+    padding: 1vh 0;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+  html {
+    font-size: 0.7rem;
+  }
+  html main .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    letter-spacing: 0.05rem;
+    z-index: 2;
+  }
+  html main .index_res {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 0;
+  }
+  html main .reparto {
+    display: -ms-grid;
+    display: grid;
+    padding: 1rem;
+  }
+  html main .reparto .mapa {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 0vh;
+  }
+  html main .reparto .mapa iframe {
+    height: 200px;
+    width: 400px;
+  }
+  html main .reparto .zonas__cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2vh 0;
+  }
+  html main .reparto .zonas__cont .zonas__productos {
+    padding: 1rem;
+  }
+  html main .reparto .zonas__cont .zonas__contacto {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 449px) {
+  html {
+    font-size: 0.6rem;
+  }
+  html .header {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    letter-spacing: 0.05rem;
+    z-index: 2;
+  }
+  html main .index_res {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 0;
+  }
+  html main .index_titulo {
+    padding-top: 1vh;
+  }
+  html main .prod_titulos {
+    padding-top: 1vh;
+  }
+  html main .tituloZonas {
+    padding-top: 1vh;
+  }
+  html main .tituloNos {
+    padding-top: 1vh;
+  }
+  html main .tituloCont {
+    padding-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  html main .reparto {
+    padding: 1rem;
+    display: -ms-grid;
+    display: grid;
+  }
+  html main .reparto .mapa {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 0vh;
+  }
+  html main .reparto .mapa iframe {
+    height: 200px;
+    width: 300px;
+  }
+  html main .reparto .zonas__cont {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 0;
+  }
+  html main .reparto .zonas__cont .zonas__productos {
+    padding: 3rem 0 0 0;
+  }
+  html main .reparto .zonas__cont .zonas__contacto {
+    padding: 1rem;
+  }
+  html .footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #232b2b;
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+  }
+  html .footer .footer__p {
+    margin: 00px;
+    text-align: center;
+  }
+  html .footer div a {
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
