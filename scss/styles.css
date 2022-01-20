@@ -407,10 +407,6 @@ html .footer .footer__p {
     display: grid;
     padding: 1rem;
   }
-  html main .reparto .mapa {
-    display: -ms-grid;
-    display: grid;
-  }
   html main .reparto .mapa .map {
     height: 200px;
     width: 400px;
