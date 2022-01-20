@@ -250,14 +250,11 @@ html main .reparto .mapa h4 {
   padding: 3vh 0;
 }
 
-html main .reparto .mapa iframe {
-  height: 300px;
-  width: 500px;
-}
-
 html main .reparto .mapa .map {
   border: solid gold 2px;
   border-radius: 20px;
+  height: 300px;
+  width: 500px;
 }
 
 html main .reparto .zonas__cont {
@@ -414,7 +411,7 @@ html .footer .footer__p {
     display: -ms-grid;
     display: grid;
   }
-  html main .reparto .mapa iframe {
+  html main .reparto .mapa .map {
     height: 200px;
     width: 400px;
   }
@@ -486,13 +483,7 @@ html .footer .footer__p {
     display: -ms-grid;
     display: grid;
   }
-  html main .reparto .mapa {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-bottom: 0vh;
-  }
-  html main .reparto .mapa iframe {
+  html main .reparto .mapa .map {
     height: 200px;
     width: 300px;
   }
