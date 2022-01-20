@@ -345,8 +345,7 @@ html{
                 display: grid;
                 padding:1rem;
                 .mapa{
-                    justify-content: center;
-                    padding-bottom: 0vh;
+                    display: grid;
                     iframe{
                         height: 200px;
                         width: 400px;

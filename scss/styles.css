@@ -411,10 +411,8 @@ html .footer .footer__p {
     padding: 1rem;
   }
   html main .reparto .mapa {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-bottom: 0vh;
+    display: -ms-grid;
+    display: grid;
   }
   html main .reparto .mapa iframe {
     height: 200px;
